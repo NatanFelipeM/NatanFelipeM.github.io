@@ -8,26 +8,43 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
     <style>
-        header{
-            margin-bottom: 50px;
+        body{
+            background-color: rgb(238, 246, 255);
         }
         header h1{
             background-color: #007BFF;
             margin-bottom: 0px;
-            text-align: center;
+            text-align: left;
             color: white;
             padding: 20px;
+            font-size: 2.1em;
+            color: rgba(255, 255, 255, 0.945);
         }
 
         header nav{
             list-style-type: none;
             font-size: 1.2em;
             padding-bottom: 0px;
-        }
-
-        header nav ul{
             background-color: rgb(98, 174, 255);
+            text-align: left;
+        }
+        header nav button{
+            background-color: rgb(98, 174, 255);
+            color: rgb(238, 246, 255);
+            border-radius: none;
+        }
+        header nav button p{
+            position: relative;
+            display: inline-block;
+            margin-left: 15px;
+            margin-bottom: 0px;
+            font-size: 1.5em;
+            font-weight: 400;
+            top: -2px;
+        }
+        header nav ul{
             margin-bottom: 0px;
             display: flex;
             justify-content: center;
@@ -38,58 +55,100 @@
             display: inline-block;
         }
         header nav li a{
-            color:white;
+            color:rgb(214, 234, 255);
             display:block;
             padding: 8px  10px;
         }
 
 
+        main{
+            background-color: white;
+            padding-top: 50px;
+        }
+        main section article{
+            margin-bottom: 40px;
+        }
         main section h2{
             margin-bottom: 20px;
+        }
+        main section h3{
+            font-size: 1.3em;
         }
         main section article p{
             font-size: 1.2em;
         }
-
+        main table tr:last-child{
+            border-bottom: 1px solid #DEE2E6;
+        }
         
 
         header nav li a:link{
-            color: white;
+            color: rgb(238, 246, 255);
             text-decoration: none;
+            font-weight: 350;
         }
         header nav li a:visited{
-            color: white;
+            color: rgb(238, 246, 255);
             text-decoration: none;
+            font-weight: 350;
         }
-        header nav li a:hover{
+        header nav li a:active{
             box-shadow: 2px;
-            background-color: white;
+            background-color: rgb(238, 246, 255);
             color: rgb(98, 174, 255);
         }
-
     </style>
 </head>
   <body>
     <header>
         <h1 >Natan Felipe M. Oscar</h1>
         <nav class="navbar d-flex p-0 justify-content-left container">
-
-            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-                <ul class="pl-0">
-                    <li class="nav-item"><a href="#">Información</a></li>
-                    <li class="nav-item"><a href="#">Historial académico</a></li>
-                    <li class="nav-item"><a href="#">Competencias profesionales</a></li>
+            
+            <button class="btn shadow-none rounded-0" data-toggle="collapse" data-trigger="focus" data-target="#collapseExample"  type="button" aria-expanded="false" aria-controls="collapseExample"><span class="fas fa-bars fa-2x"></span><p>Menú</p></button>
+                
+            <ul class="pl-0 collapse"  id="collapseExample">
+                    <li><a href="#">Información</a></li>
+                    <li><a href="#">Conocimientos de programación</a></li>
+                    <li><a href="#">Competencias profesionales</a></li>
                 </ul>
-            </div>
+
         </nav>
     </header>
     <main class="container">
         <section>
-            <h2 class="display-4">Información</h2>
+            <h2>Información.</h2>
             <article>
-                <p>Hola, me llamo Natan Felipe Montanheiro Oscar. He nacido el 26 de abril del 1999 en Ourizona/PR, Brasil.</p>
-                 <p>Soy técnico informático con una formación de grado medio en sistemas microinformáticos y redes y tengo alemán básico. Soy joven y tengo ganas de trabajar.</p>
-                 <p>Me gusta viajar y conocer nuevas cosas, por lo que estoy abierto a traslados y en mis tiempos libres me gusta escuchar música, lo que me ayuda a mejorar mi alemán.</p>
+                <h3>Sobre mí:</h3>
+                    <p>Hola, me llamo Natan Felipe Montanheiro Oscar. He nacido el 26 de abril del 1999 en Ourizona/PR, Brasil.</p>
+                    <p>Soy técnico informático con una formación de grado medio en sistemas microinformáticos y redes. Soy joven y tengo ganas de trabajar.</p>
+                    <p>Me gusta viajar y conocer nuevas cosas, por lo que estoy abierto a traslados.</p>
+                </article>
+                <article>
+                    <h3>Idiomas:</h3>
+                    <table class="table">
+                        <tr class="row">
+                            <td class="col-3"><img src="imagenes/br.png" width="80px" height="50px"></td>
+                            <td class="col"><h6>Portugués</h6>Idioma materno.</td>
+                        </tr>
+                        <tr class="row">
+                            <td class="col-3"><img src="imagenes/es.png" width="80px" height="50px"></td>
+                            <td class="col"><h6>Español</h6>Nivel alto. Adquirido al vivir en españa.</td>
+                        </tr>
+                        <tr class="row">
+                            <td class="col-3"><img src="imagenes/us.png" width="80px" height="50px"></td>
+                            <td class="col"><h6>Inglés</h6>Nivel medio. Conseguido con la educación básica.</td>
+                        </tr>
+                        <tr class="row">
+                            <td class="col-3"><img src="imagenes/de.png" width="80px" height="50px"></td>
+                            <td class="col"><h6>Alemán</h6>Nivel básico. Obtenido a través de un curso.</td>
+                        </tr>
+                    </table> 
+                </article>
+        </section>
+        <section>
+            <h2>Conocimientos de programación.</h2>
+            <article>
+                <p>Visual basic.</p>
             </article>
         </section>
     </main>
