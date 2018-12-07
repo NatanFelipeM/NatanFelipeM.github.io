@@ -13,16 +13,18 @@
         body{
             background-color: rgb(238, 246, 255);
         }
+        h2{
+            font-size: 1.5rem;
+        }
         header h1{
             background-color: #007BFF;
             margin-bottom: 0px;
-            text-align: left;
+            text-align: center;
             color: white;
             padding: 20px;
             font-size: 2.1em;
             color: rgba(255, 255, 255, 0.945);
         }
-
         header nav{
             list-style-type: none;
             font-size: 1.2em;
@@ -61,6 +63,7 @@
         }
 
 
+
         main{
             background-color: white;
             padding-top: 50px;
@@ -77,10 +80,21 @@
         main section article p{
             font-size: 1.2em;
         }
+        main section:first-child article:last-child{
+            margin-bottom: 0px;
+            padding-bottom: 40px;
+        }
+        main table tr:nth-child(3) td:first-child img{
+            position: relative;
+            top: 12.5px;
+        }
         main table tr:last-child{
             border-bottom: 1px solid #DEE2E6;
         }
-        
+        main section:nth-child(2){
+            padding-bottom: 40px;
+        }
+
 
         header nav li a:link{
             color: rgb(238, 246, 255);
@@ -148,7 +162,19 @@
         <section>
             <h2>Conocimientos de programación.</h2>
             <article>
-                <p>Visual basic.</p>
+                <h3>Visual basic.</h3>
+                <p>Acceso a ficheros, programación de funciones, formularios, etc...</p>
+            </article>
+        </section>
+        <section>
+            <h2>Competencias profesionales.</h2>
+            <article>
+                    <h3>Redes.</h3>
+                    <p>Configuración de dispositivos de red, montaje de redes pequeñas, detección de fallos, etc...</p>
+            </article>
+            <article>
+                    <h3>Sistemas operativos monopuestos.</h3>
+                    <p>Gerenciamiento con linux: gestión de usuarios, gestión de procesos, configuración de permisos, todo en consola de comandos.</p>
             </article>
         </section>
     </main>
