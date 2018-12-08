@@ -8,10 +8,14 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Asap|Concert+One|Signika" rel="stylesheet">
     <style>
         body{
             background-color: rgb(238, 246, 255);
+            font-family: 'Signika', sans-serif;
         }
         h2{
             font-size: 1.5rem;
@@ -34,7 +38,7 @@
         }
         header nav button{
             background-color: rgb(98, 174, 255);
-            color: rgb(238, 246, 255);
+            color: rgba(255, 255, 255, 0.945);
             border-radius: none;
         }
         header nav button p{
@@ -57,7 +61,7 @@
             display: inline-block;
         }
         header nav li a{
-            color:rgb(214, 234, 255);
+            color:rgba(255, 255, 255, 0.945);
             display:block;
             padding: 8px  10px;
         }
@@ -68,21 +72,41 @@
             background-color: white;
             padding-top: 50px;
         }
+        main section:last-child{
+            padding-bottom: 10px;
+        }
+        main section:first-child::after{
+            content: "";
+            display:block;
+            height: 3px;
+            background-color: rgb(101, 173, 255);
+            border-radius: 30px;
+            width: 70%;
+            position: relative;
+            left: 60px;
+            margin-bottom: 70px;
+            margin-top: 70px;
+        }
         main section article{
             margin-bottom: 40px;
+            padding-left:10px;
         }
         main section h2{
             margin-bottom: 20px;
         }
         main section h3{
             font-size: 1.3em;
+            text-decoration: underline;
+            text-decoration-color: rgb(167, 208, 255);
         }
         main section article p{
             font-size: 1.2em;
         }
         main section:first-child article:last-child{
             margin-bottom: 0px;
-            padding-bottom: 40px;
+        }
+        main section:first-child article:last-child p{
+            margin-bottom: 0px;
         }
         main table tr:nth-child(3) td:first-child img{
             position: relative;
@@ -91,9 +115,44 @@
         main table tr:last-child{
             border-bottom: 1px solid #DEE2E6;
         }
-        main section:nth-child(2){
-            padding-bottom: 40px;
+        main section:nth-child(2)::after{
+            content: "";
+            display:block;
+            height: 3px;
+            background-color: rgb(101, 173, 255);
+            border-radius: 30px;
+            width: 70%;
+            position: relative;
+            left: 60px;
+            margin-bottom: 70px;
+            margin-top: 70px;
         }
+
+
+
+
+        aside{
+            background-color: white;
+            text-align:center;
+            padding-bottom: 10px;
+        }
+        aside a{
+            font-size: 1.3em;
+        }
+
+
+
+
+
+
+        footer{
+            background-color: rgb(98, 174, 255);
+        }
+        footer address{
+            margin-bottom: 0px;
+            color: white;
+        }
+
 
 
         header nav li a:link{
@@ -115,31 +174,38 @@
 </head>
   <body>
     <header>
-        <h1 >Natan Felipe M. Oscar</h1>
+        <h1 id="inicio">Natan Felipe M. Oscar</h1>
         <nav class="navbar d-flex p-0 justify-content-left container">
             
             <button class="btn shadow-none rounded-0" data-toggle="collapse" data-trigger="focus" data-target="#collapseExample"  type="button" aria-expanded="false" aria-controls="collapseExample"><span class="fas fa-bars fa-2x"></span><p>Menú</p></button>
                 
             <ul class="pl-0 collapse"  id="collapseExample">
-                    <li><a href="#">Información</a></li>
-                    <li><a href="#">Conocimientos de programación</a></li>
-                    <li><a href="#">Competencias profesionales</a></li>
+                    <li><a href="#informacion">Información</a></li>
+                    <li><a href="#conocimientos">Conocimientos de programación</a></li>
+                    <li><a href="#competencias">Competencias profesionales</a></li>
                 </ul>
 
         </nav>
     </header>
     <main class="container">
+
         <section>
-            <h2>Información.</h2>
-            <article>
+
+            <h2 id="informacion">Información.</h2>
+                <article>
+
                 <h3>Sobre mí:</h3>
                     <p>Hola, me llamo Natan Felipe Montanheiro Oscar. He nacido el 26 de abril del 1999 en Ourizona/PR, Brasil.</p>
                     <p>Soy técnico informático con una formación de grado medio en sistemas microinformáticos y redes. Soy joven y tengo ganas de trabajar.</p>
                     <p>Me gusta viajar y conocer nuevas cosas, por lo que estoy abierto a traslados.</p>
+
                 </article>
+
                 <article>
+
                     <h3>Idiomas:</h3>
                     <table class="table">
+
                         <tr class="row">
                             <td class="col-3"><img src="imagenes/br.png" width="80px" height="50px"></td>
                             <td class="col"><h6>Portugués</h6>Idioma materno.</td>
@@ -156,38 +222,54 @@
                             <td class="col-3"><img src="imagenes/de.png" width="80px" height="50px"></td>
                             <td class="col"><h6>Alemán</h6>Nivel básico. Obtenido a través de un curso.</td>
                         </tr>
+
                     </table> 
+
                 </article>
+
         </section>
+
+
         <section>
-            <h2>Conocimientos de programación.</h2>
+
+            <h2 id="conocimientos">Conocimientos de programación.</h2>
             <article>
                 <h3>Visual basic.</h3>
                 <p>Acceso a ficheros, programación de funciones, formularios, etc...</p>
             </article>
+
         </section>
+
+
         <section>
-            <h2>Competencias profesionales.</h2>
+
+            <h2 id="competencias">Competencias profesionales.</h2>
             <article>
                     <h3>Redes.</h3>
                     <p>Configuración de dispositivos de red, montaje de redes pequeñas, detección de fallos, etc...</p>
             </article>
+
             <article>
-                    <h3>Sistemas operativos monopuestos.</h3>
+                    <h3>Sistemas operativos.</h3>
                     <p>Gerenciamiento con linux: gestión de usuarios, gestión de procesos, configuración de permisos, todo en consola de comandos.</p>
             </article>
+
         </section>
+
     </main>
-    <div class="container">
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A aspernatur nemo sequi nulla quasi reiciendis, accusantium rerum, atque autem ipsum unde eaque? Ratione dignissimos iusto placeat blanditiis, sapiente id magni.</p>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A aspernatur nemo sequi nulla quasi reiciendis, accusantium rerum, atque autem ipsum unde eaque? Ratione dignissimos iusto placeat blanditiis, sapiente id magni.</p>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A aspernatur nemo sequi nulla quasi reiciendis, accusantium rerum, atque autem ipsum unde eaque? Ratione dignissimos iusto placeat blanditiis, sapiente id magni.</p>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A aspernatur nemo sequi nulla quasi reiciendis, accusantium rerum, atque autem ipsum unde eaque? Ratione dignissimos iusto placeat blanditiis, sapiente id magni.</p>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A aspernatur nemo sequi nulla quasi reiciendis, accusantium rerum, atque autem ipsum unde eaque? Ratione dignissimos iusto placeat blanditiis, sapiente id magni.</p>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A aspernatur nemo sequi nulla quasi reiciendis, accusantium rerum, atque autem ipsum unde eaque? Ratione dignissimos iusto placeat blanditiis, sapiente id magni.</p>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A aspernatur nemo sequi nulla quasi reiciendis, accusantium rerum, atque autem ipsum unde eaque? Ratione dignissimos iusto placeat blanditiis, sapiente id magni.</p>
-    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A aspernatur nemo sequi nulla quasi reiciendis, accusantium rerum, atque autem ipsum unde eaque? Ratione dignissimos iusto placeat blanditiis, sapiente id magni.</p>
-</div>
+
+
+
+    <aside class="container"><a href="#inicio"><i class="fas fa-chevron-circle-up"></i> Volver al principio</a></aside>
+
+
+
+    <footer>
+        <address>
+            <small>By: Natan | Correo electrónico: NatanFelipe_M.Oscar@hotmail.com</small>
+            
+        </address>
+    </footer>
         <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
