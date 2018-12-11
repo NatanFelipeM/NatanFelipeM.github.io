@@ -68,16 +68,12 @@
             display:block;
             padding: 8px  10px;
         }
-
-
-
         main{
             background-color: white;
             padding-top: 50px;
         }
          main > h2{
             margin-bottom: 20px;
-            text-align: center;
         }
         main section:first-child::after{
             content: "";
@@ -95,7 +91,10 @@
             padding-bottom: 10px;
             
         }
-
+        main section:last-child article:first-child{
+            border-right: 1px solid rgb(101, 173, 255);
+            padding-right: 10px;
+        }
         main section article{
             margin-bottom: 40px;
             padding-left:10px;
@@ -139,11 +138,6 @@
             margin-bottom: 70px;
             margin-top: 50px;
         }
-
-
-
-
-
         aside{
             background-color: white;
             text-align:center;
@@ -153,12 +147,6 @@
             font-size: 1.1em;
             color: rgb(98, 174, 255);
         }
-
-
-
-
-
-
         footer{
             background-color: rgb(98, 174, 255);
         }
@@ -166,9 +154,6 @@
             margin-bottom: 0px;
             color: white;
         }
-
-
-
         header nav li a:link{
             color: rgb(238, 246, 255);
             text-decoration: none;
@@ -184,8 +169,6 @@
             background-color: rgb(238, 246, 255);
             color: rgb(98, 174, 255);
         }
-
-
         @media screen and (min-width: 508px){
             main table tr:nth-child(3) td:first-child img{
                 position: static;
@@ -210,7 +193,6 @@
             main section:nth-child(2)::after{
                 position: static;
                 width: 100%;
-
             }
             main table tr td:first-child{
                 display: flex;
@@ -221,13 +203,7 @@
             main section:last-child{
                 flex-direction: row;
             }
-            main section:last-child article:first-child{
-            border-right: 1px solid rgb(101, 173, 255);
-            padding-right: 10px;
-            }
-        }
-        @media screen and (min-width: 767px){
-            header nav ul.collapse.show{
+            header nav button{
                 
             }
         }
@@ -240,14 +216,13 @@
             
             <button class="btn shadow-none rounded-0 d-md-none" data-toggle="collapse" data-trigger="focus" data-target="#collapseExample"  type="button" aria-expanded="false" aria-controls="collapseExample"><span class="fas fa-bars fa-2x"></span><p>Menú</p></button>
                 
-            <ul class="pl-0 collapse d-md-flex flex-md-row justify-content-lg-around"  id="collapseExample">
+            <ul class="pl-0 collapse d-md-flex flex-row justify-content-around"  id="collapseExample">
                     <li><a href="#informacion">Información</a></li>
                     <li><a href="#conocimientos">Conocimientos de programación</a></li>
                     <li><a href="#competencias">Competencias profesionales</a></li>
                 </ul>
 
         </nav>
-
     </header>
     <main class="container">
 
@@ -269,19 +244,19 @@
                     <table class="table">
 
                         <tr class="row">
-                            <td class="col-3 col-sm-4"><img src= "br.png" width="74px" height="50px"></td>
+                            <td class="col-3 col-sm-4"><img src= "https://image.freepik.com/vector-gratis/ilustracion-bandera-brasil_53876-27017.jpg" width="90px" height="50px"></td>
                             <td class="col"><h6>Portugués</h6>Idioma materno.</td>
                         </tr>
                         <tr class="row">
-                            <td class="col-3 col-sm-4"><img src="es.png" width="80px" height="50px"></td>
+                            <td class="col-3 col-sm-4"><img src="https://image.freepik.com/vector-gratis/ilustracion-bandera-espana_53876-18168.jpg" width="90px" height="50px"></td>
                             <td class="col"><h6>Español</h6>Nivel alto. Adquirido al vivir en españa.</td>
                         </tr>
                         <tr class="row">
-                            <td class="col-3 col-sm-4"><img src="us.png" width="80px" height="50px"></td>
+                            <td class="col-3 col-sm-4"><img src="https://image.freepik.com/vector-gratis/ilustracion-bandera-estados-unidos_53876-18165.jpg" width="90px" height="50px"></td>
                             <td class="col"><h6>Inglés</h6>Nivel medio. Conseguido con la educación básica.</td>
                         </tr>
                         <tr class="row">
-                            <td class="col-3 col-sm-4"><img src="de.png" width="80px" height="50px"></td>
+                            <td class="col-3 col-sm-4"><img src="https://image.freepik.com/vector-gratis/ilustracion-bandera-alemana_53876-27101.jpg" width="90px" height="50px"></td>
                             <td class="col"><h6>Alemán</h6>Nivel básico. Obtenido a través de un curso.</td>
                         </tr>
 
