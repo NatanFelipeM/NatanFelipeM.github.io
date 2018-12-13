@@ -19,9 +19,11 @@
         body{
             background-color: rgb(238, 246, 255);
             font-family: 'Signika', sans-serif;
+            background-image: url("fondoPersonal.jpg")
         }
         h2{
             font-size: 1.5rem;
+
         }
         header h1{
             background-color: #007BFF;
@@ -69,11 +71,12 @@
             padding: 8px  10px;
         }
         main{
-            background-color: white;
+            background-color: rgba(255, 255, 255, 0.904);
             padding-top: 50px;
         }
          main > h2{
             margin-bottom: 20px;
+            text-align: center;
         }
         main section:first-child::after{
             content: "";
@@ -90,10 +93,6 @@
         main section:last-child{
             padding-bottom: 10px;
             
-        }
-        main section:last-child article:first-child{
-            border-right: 1px solid rgb(101, 173, 255);
-            padding-right: 10px;
         }
         main section article{
             margin-bottom: 40px;
@@ -139,13 +138,16 @@
             margin-top: 50px;
         }
         aside{
-            background-color: white;
+            background-color: rgba(255, 255, 255, 0.904);
             text-align:center;
-            padding-bottom: 10px;
         }
         aside a{
             font-size: 1.1em;
             color: rgb(98, 174, 255);
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            background-color: white;
+            border: 3px solid rgb(98, 174, 255);
         }
         footer{
             background-color: rgb(98, 174, 255);
@@ -203,20 +205,21 @@
             main section:last-child{
                 flex-direction: row;
             }
-            header nav button{
-                
-            }
+            main section:last-child article:first-child{
+            border-right: 1px solid rgb(101, 173, 255);
+            padding-right: 10px;
+        }
         }
     </style>
 </head>
   <body>
     <header>
         <h1 id="inicio">Natan Felipe M. Oscar</h1>
-        <nav class="navbar d-flex p-0 justify-content-left container">
+        <nav class="navbar d-flex justify-content-left container pl-lg-5 pr-lg-5 col-lg-11">
             
             <button class="btn shadow-none rounded-0 d-md-none" data-toggle="collapse" data-trigger="focus" data-target="#collapseExample"  type="button" aria-expanded="false" aria-controls="collapseExample"><span class="fas fa-bars fa-2x"></span><p>Menú</p></button>
                 
-            <ul class="pl-0 collapse d-md-flex flex-row justify-content-around"  id="collapseExample">
+            <ul class="pl-0 collapse d-md-flex flex-row justify-content-around pl-lg-5 pr-lg-5"  id="collapseExample">
                     <li><a href="#informacion">Información</a></li>
                     <li><a href="#conocimientos">Conocimientos de programación</a></li>
                     <li><a href="#competencias">Competencias profesionales</a></li>
@@ -295,7 +298,7 @@
 
 
 
-    <aside class="container"><a href="#inicio"><i class="fas fa-chevron-circle-up"></i> Volver al principio</a></aside>
+    <aside class="container"><a class="col-6 pt-1" href="#inicio"><i class="fas fa-chevron-circle-up"></i> Volver al principio</a></aside>
 
 
 
