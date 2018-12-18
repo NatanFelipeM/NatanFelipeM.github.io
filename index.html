@@ -35,7 +35,6 @@
         header nav{
             list-style-type: none;
             font-size: 1.2em;
-            padding-bottom: 0px;
             background-color: rgb(98, 174, 255);
             text-align: left;
         }
@@ -56,7 +55,6 @@
         header nav ul{
             margin-bottom: 0px;
             display: flex;
-            justify-content: center;
             flex-direction: column;
             width: 100%;
         }
@@ -68,6 +66,9 @@
             display:block;
             padding: 8px  10px;
         }
+
+
+
         main{
             background-color: rgba(255, 255, 255, 0.904);
         }
@@ -90,7 +91,7 @@
             margin-bottom: 20px;
             text-align: center;
         }
-        main section:first-child::after{
+        main section:not(:last-child)::after{
             content: "";
             display:block;
             height: 3px;
@@ -98,13 +99,13 @@
             border-radius: 30px;
             width: 70%;
             position: relative;
-            left: 60px;
+            left: 10px;
             margin-bottom: 70px;
             margin-top: 50px;
         }
         main section:last-child{
+            display: flex;
             padding-bottom: 10px;
-            
         }
         main section article{
             margin-bottom: 40px;
@@ -136,18 +137,6 @@
         }
         main table tr:last-child{
             border-bottom: 1px solid #DEE2E6;
-        }
-        main section:nth-child(2)::after{
-            content: "";
-            display:block;
-            height: 3px;
-            background-color: rgb(101, 173, 255);
-            border-radius: 30px;
-            width: 70%;
-            position: relative;
-            left: 60px;
-            margin-bottom: 70px;
-            margin-top: 50px;
         }
         aside{
             background-color: rgba(255, 255, 255, 0.904);
@@ -202,14 +191,6 @@
                 align-items: center;
                 width: 70%;
             }
-            main section:first-child::after{
-                position: static;
-                width: 100%;
-            }
-            main section:nth-child(2)::after{
-                position: static;
-                width: 100%;
-            }
             main table tr td:first-child{
                 display: flex;
                 align-items: center;
@@ -227,10 +208,6 @@
                 background-color: rgb(98, 174, 255);
                 border-radius: 90px;
             }
-            header h1{
-                border-bottom-left-radius: 20px;
-                border-bottom-right-radius: 20px;
-            }
             header nav{
                 border-bottom-left-radius: 500px;
                 border-bottom-right-radius: 500px;
@@ -239,19 +216,23 @@
                 border-top-left-radius: 20px;
                 border-top-right-radius: 20px;
             }
+            header nav li a:hover{
+                background-color: white;
+                color: rgb(98, 174, 255);
+            }
         }
     </style>
 </head>
   <body>
     <header>
         <h1 id="inicio">Natan Felipe M. Oscar</h1>
-        <nav class="navbar d-flex justify-content-left container pl-lg-5 pr-lg-5 col-lg-11">
+        <nav class="navbar d-flex justify-content-left container pb-lg-0 pl-lg-5 pr-lg-5 col-lg-11 align-content-md-end">
             
             <button class="btn shadow-none rounded-0 d-md-none" data-toggle="collapse" data-trigger="focus" data-target="#collapseExample"  type="button" aria-expanded="false" aria-controls="collapseExample"><span class="fas fa-bars fa-2x"></span><p>Menú</p></button>
                 
-            <ul class="pl-0 collapse d-md-flex flex-col flex-col flex-md-row justify-content-around pl-lg-5 pr-lg-5"  id="collapseExample">
-                    <li><a href="#informacion">Información</a></li>
-                    <li><a href="#conocimientos">Conocimientos de programación</a></li>
+            <ul class="pl-0 collapse d-md-flex flex-col flex-col flex-md-row justify-content-left justify-content-md-center  pl-lg-5 pr-lg-5"  id="collapseExample">
+                    <li><a class="mr-md-4" href="#informacion">Información</a></li>
+                    <li><a class="mr-md-4" href="#conocimientos">Conocimientos de programación</a></li>
                     <li><a href="#competencias">Competencias profesionales</a></li>
                 </ul>
 
