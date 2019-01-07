@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <title>Natan</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Asap|Concert+One|Signika" rel="stylesheet">
+    <style>
+        body{
+            background-color: rgb(238, 246, 255);
+            font-family: 'Signika', sans-serif;
+            background-image: url("fondoPersonal.jpg");
+            background-attachment: fixed;
+        }
+
+        header h1{
+            background-color: #007BFF;
+            margin-bottom: 0px;
+            text-align: center;
+            color: white;
+            padding: 20px;
+            font-size: 2.1em;
+            color: rgba(255, 255, 255, 0.945);
+        }
+        header nav{
+            list-style-type: none;
+            font-size: 1.2em;
+            background-color: rgb(98, 174, 255);
+            text-align: left;
+        }
+        header nav button{
+            background-color: rgb(98, 174, 255);
+            color: rgba(255, 255, 255, 0.945);
+            border-radius: none;
+        }
+        header nav button p{
+            position: relative;
+            display: inline-block;
+            margin-left: 15px;
+            margin-bottom: 0px;
+            font-size: 1.5em;
+            font-weight: 400;
+            top: -2px;
+        }
+        header nav ul{
+            margin-bottom: 0px;
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+        }
+        header nav li{
+            display: inline-block;
+        }
+        header nav li a{
+            color:rgba(255, 255, 255, 0.945);
+            display:block;
+            padding: 8px  10px;
+        }
+
+
+
+        main{
+            background-color: rgba(255, 255, 255, 0.904);
+        }
+              main div div{
+            background-color: rgb(204, 228, 255);
+            margin-bottom: 80px;
+            display:flex;
+            justify-content: center;
+            padding-bottom: 15px;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            width: 200px;
+        }
+        main div img{
+            height: 200px;
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+        }
+         main > h2{
+            margin-bottom: 20px;
+            text-align: center;
+        }
+        main section:not(:last-child)::after{
+            content: "";
+            display:block;
+            height: 3px;
+            background-color: rgb(101, 173, 255);
+            border-radius: 30px;
+            width: 70%;
+            position: relative;
+            left: 70px;
+            margin-bottom: 70px;
+            margin-top: 50px;
+        }
+        main section:last-child{
+            display: flex;
+            padding-bottom: 10px;
+        }
+        main section article{
+            margin-bottom: 40px;
+            padding-left:10px;
+            text-align: center;
+        }
+        main section h2{
+            margin-bottom: 20px;
+            font-weight: 500;
+            text-align: center;
+        }
+        main section h3{
+            font-size: 1.3em;
+            font-weight: 590;
+            margin-bottom: 30px;
+        }
+        main section article p{
+            font-size: 1.2em;
+        }
+        main section:first-child article:last-child{
+            margin-bottom: 0px;
+        }
+        main section:first-child article:last-child p{
+            margin-bottom: 0px;
+        }
+        main table tr:nth-child(3) td:first-child img{
+            position: relative;
+            top: 12.5px;
+        }
+        main table tr:last-child{
+            border-bottom: 1px solid #DEE2E6;
+        }
+        aside{
+            background-color: rgba(255, 255, 255, 0.904);
+            text-align:center;
+        }
+        aside a{
+            font-size: 1.1em;
+            color: rgb(98, 174, 255);
+            border-top-left-radius: 20px;
+            border-top-right-radius: 20px;
+            background-color: white;
+            border: 3px solid rgb(98, 174, 255);
+        }
+        footer{
+            background-color: rgb(98, 174, 255);
+        }
+        footer address{
+            margin-bottom: 0px;
+            color: white;
+            padding-top: 5px;
+            padding-left: 6px;
+        }
+        header nav li a:link{
+            color: rgb(238, 246, 255);
+            text-decoration: none;
+            font-weight: 350;
+        }
+        header nav li a:visited{
+            color: rgb(238, 246, 255);
+            text-decoration: none;
+            font-weight: 350;
+        }
+        header nav li a:active{
+            box-shadow: 2px;
+            background-color: rgb(238, 246, 255);
+            color: rgb(98, 174, 255);
+        }
+        @media screen and (min-width: 508px){
+            main table tr:nth-child(3) td:first-child img{
+                position: static;
+            }
+        }
+        @media screen and (min-width: 576px){
+            main{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+            main section{
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                width: 70%;
+            }
+            main table tr td:first-child{
+                display: flex;
+                align-items: center;
+            }
+            main section:not(:last-child)::after{
+                left: 10px;
+            }
+        }
+        @media screen and (min-width: 667px){
+            main section:last-child{
+                flex-direction: row;
+            }
+
+            header{
+                background-color: rgb(98, 174, 255);
+                border-radius: 90px;
+            }
+            header nav{
+                border-bottom-left-radius: 500px;
+                border-bottom-right-radius: 500px;
+            }
+            footer{
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+            }
+            header nav li a:hover{
+                background-color: white;
+                color: rgb(98, 174, 255);
+            }
+            main section:not(:last-child)::after{
+                left: 10px;
+            }
+        }
+    </style>
+</head>
+  <body>
+    <header>
+        <h1 id="inicio">Natan Felipe M. Oscar</h1>
+        <nav class="navbar d-flex justify-content-left container pb-lg-0 pl-lg-5 pr-lg-5 col-lg-11 align-content-md-end">
+            
+            <button class="btn shadow-none rounded-0 d-md-none" data-toggle="collapse" data-trigger="focus" data-target="#collapseExample"  type="button" aria-expanded="false" aria-controls="collapseExample"><span class="fas fa-bars fa-2x"></span><p>Menú</p></button>
+                
+            <ul class="pl-0 collapse d-md-flex flex-col flex-md-row justify-content-left justify-content-md-center pl-lg-5 pr-lg-5"  id="collapseExample">
+                    <li class="mr-lg-4"><a href="#informacion">Informação</a></li>
+                    <li class="mr-lg-4"><a href="#conocimientos">Conhecimentos em programação</a></li>
+                    <li><a href="#competencias">Competências profissionais</a></li>
+                </ul>
+
+        </nav>
+    </header>
+    <main class="container col-sm-9">
+
+            <div class="dropdown">
+                    <button class="btn shadow-none dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      <i class="fas fa-globe"></i>Idiomas
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                      <a class="dropdown-item" href="#">Português (Brasil)</a>
+                      <a class="dropdown-item" href="#">Espanhol</a>
+                    </div>
+                  </div>
+
+        <div class="container col-md-5 col-lg-4 d-flex justify-content-center">
+        
+            <div>
+
+            <img src="eu.jpg">
+
+            </div>
+
+        </div>
+        <section>
+
+            <h2 id="informacion">Información.</h2>
+                <article>
+
+                <h3>Sobre mim:</h3>
+                    <p>Eu me chamo Natan Felipe Montanheiro Oscar e nasci no 26 de Abril do ano 1999 em Ourizona/PR, Brasil.</p>
+                    <p>Sou técnico informático com uma formação de nível médio em sistemas microinformáticos e redes. Sou jovem e tenho vontade de trabalhar.</p>
+                    <p>Gosto de viajar e conhecer coisas novas, pelo que estou aberto a traslados.</p>
+
+                </article>
+
+                <article>
+
+                    <h3>Idiomas:</h3>
+                    <table class="table">
+
+                        <tr class="row">
+                            <td class="col-3 col-sm-4"><img src= "https://image.freepik.com/vector-gratis/ilustracion-bandera-brasil_53876-27017.jpg" width="90px" height="50px"></td>
+                            <td class="col"><h6>Português</h6>Idioma materno.</td>
+                        </tr>
+                        <tr class="row">
+                            <td class="col-3 col-sm-4"><img src="https://image.freepik.com/vector-gratis/ilustracion-bandera-espana_53876-18168.jpg" width="90px" height="50px"></td>
+                            <td class="col"><h6>Espanhol</h6>Nível alto. Adquirido ao morar em españa.</td>
+                        </tr>
+                        <tr class="row">
+                            <td class="col-3 col-sm-4"><img src="https://image.freepik.com/vector-gratis/ilustracion-bandera-estados-unidos_53876-18165.jpg" width="90px" height="50px"></td>
+                            <td class="col"><h6>Inglês</h6>Nível medio. Conseguido com a educación básica.</td>
+                        </tr>
+                        <tr class="row">
+                            <td class="col-3 col-sm-4"><img src="https://image.freepik.com/vector-gratis/ilustracion-bandera-alemana_53876-27101.jpg" width="90px" height="50px"></td>
+                            <td class="col"><h6>Alemão</h6>Nível básico. Obtido através de um curso.</td>
+                        </tr>
+
+                    </table> 
+
+                </article>
+
+        </section>
+
+
+        <section>
+
+            <h2 id="conocimientos">Conhecimentos em programação.</h2>
+            <article>
+                <h3>Visual basic.</h3>
+                <p>Acceso a archivos de texto, programação de funções, formularios, etc...</p>
+        </section>
+
+
+        <h2 id="competencias">Competências profissionais.</h2>
+        <section class="flex-wrap">
+
+            <article>
+                    <h3>Redes.</h3>
+                    <p>Configuração de dispositivos de rede, montagem de redes pequenas, detecção de erros, etc...</p>
+            </article>
+
+            <article>
+                    <h3>Sistemas operativos.</h3>
+                    <p>Gerenciamiento com linux: gestão de usuarios, gestão de procesos, configuração de permissões, todo em consola de comandos.</p>
+            </article>
+
+            <article class="col-12">
+                    <h3>Outras competências.</h3>
+                    <p>Montagem e manutenção de computadores.</p>
+            </article>
+        </section>
+
+    </main>
+
+
+
+    <aside class="container col-sm-9"><a class="col-6 pt-1" href="#inicio"><i class="fas fa-chevron-circle-up"></i> Voltar ao inicio</a></aside>
+
+
+
+    <footer>
+        <address>
+            <small>By: Natan | Correio electrônico: NatanFelipe_M.Oscar@hotmail.com</small>
+            
+        </address>
+    </footer>
+        <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
