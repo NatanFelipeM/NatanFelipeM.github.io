@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var matriz = [1, 5, 12, 2];
+    var resta = matriz[0] - matriz[matriz.length - 1];
+        if(resta == 0){
+            console.log("Los números son iguales.");
+        }
+        else if(resta < 0){
+            resta = matriz[matriz.length - 1] - matriz[0];
+        }
+        else if(resta > 0){
+            matriz[0] = 0;
+            matriz[matriz.length - 1] = 0;
+        }
+    </script>
+</body>
+</html>
